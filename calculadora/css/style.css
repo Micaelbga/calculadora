@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(7, 60, 109);
+}
+h1{
+    text-align: center;
+}
+.centralizador{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: black;
+    width: 200px;
+}
+.container-botoes  {
+    display: flex;
+       
+}
+#painel-superior{
+    height: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;    
+}
+#painel-inferior{
+    height: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;    
+}

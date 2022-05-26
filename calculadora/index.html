@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/botao.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calculadora High-Tech</h1>
+    <div class="centralizador">
+        <div class="container">
+            <div id="painel-superior" class="painel"></div>
+            <div id="painel-inferior" class="painel">0</div>
+            <div class="container-botoes">        
+                <div class="coluna">
+                    <button class="botao" onclick="limparMemoria()">C</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(7)">7</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(4)">4</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(1)">1</button>
+                    <div class="botao botao-numero"></div>
+                </div>
+                <div class="coluna">
+                    <button class="botao" onclick="deletarDigito()">del</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(8)">8</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(5)">5</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(2)">2</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(0)">0</button>
+                </div>
+                <div class="coluna">
+                    <button class="botao" onclick="aplicarOperador('%')">%</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(9)">9</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(6)">6</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito(3)">3</button>
+                    <button class="botao botao-numero" onclick="adicionarDigito('.')">,</button>
+                </div>
+                <div class="coluna">
+                    <button class="botao" onclick="aplicarOperador('x')">x</button>
+                    <button class="botao" onclick="aplicarOperador('+')">+</button>
+                    <button class="botao" onclick="aplicarOperador('-')">-</button>
+                    <button class="botao" onclick="aplicarOperador('/')">/</button>
+                    <button class="botao" onclick="resolver()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scriptCalculadora.js"></script>
+    <script src="js/scriptBotao.js"></script>
+</body>
+</html>
